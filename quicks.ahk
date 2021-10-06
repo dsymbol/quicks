@@ -1,4 +1,4 @@
-﻿#NoEnv
+#NoEnv
 FileCreateDir, %A_AppData%\Quicks
 SetWorkingDir %A_AppData%\Quicks
 SetBatchLines -1
@@ -72,18 +72,17 @@ Menu, Tray, Add , Open, Open
 Menu, Tray, Add , Exit, Esc
 
 ;GUI
-Gui, Add, GroupBox, x20 y9 w324 h86, Launch
+Gui, Add, GroupBox, x15 y9 w268 h86, Launch
 Gui, Add, Text, x37 y31 w280 h18, Choose the account that you want to play on.
-Gui, Add, DropDownList, x36 y52 w226 h26 R6 vaccpick, % ListAccs
-Gui, Add, Button, x268 y51 w62 h25 gLaunch, Launch
-Gui, Add, GroupBox, x20 y100 w324 h113, Settings
+Gui, Add, DropDownList, x36 y53 w160 h36 R6 vaccpick, % ListAccs
+Gui, Add, Button, x201 y51 w62 h25 gLaunch, Launch
+Gui, Add, GroupBox, x15 y100 w268 h113, Settings
 Gui, Add, Button, x36 y125 w103 h25 gManager, Account Manager
 Gui, Add, Button, x144 y125 w65 h25 gDirectory, Directory
 Gui, Add, Button, x214 y125 w48 h25 gDelay, Delay
-Gui, Add, Button, x267 y125 w62 h25 gGitHub, GitHub
-Gui, Add, Checkbox, x37 y161 w305 vexitfl gexitfl Checked%2ch%, Close program after launch (Recommended)
-Gui, Add, Checkbox, x37 y181 w305 vexitp gexitp Checked%1ch%, Close all Battle.net processes after launch. (If open)
-Gui, Show, Center w364 h228,Quicks Launcher
+Gui, Add, Checkbox, x37 y161 w305 vexitfl gexitfl Checked%2ch%, Close quicks after launch
+Gui, Add, Checkbox, x37 y181 w305 vexitp gexitp Checked%1ch%, Close all Battle.net processes after launch
+Gui, Show, Center w298 h228, Quicks Launcher
 return
 
 ; Account code 
@@ -173,10 +172,6 @@ updateAccounts:
     GuiControl,, accpick, %ListAccs%
 	GuiControl, accountMan:, accountsListBox, %ListAccs% 
 return
-
-GitHub:
-	Run, https://github.com/dsymbol/Quicks
-	return
 
 ; Settings code
 
