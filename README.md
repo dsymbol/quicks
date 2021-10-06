@@ -15,10 +15,6 @@ Will not use the [Battle.net](https://www.blizzard.com/en-us/apps/battle.net/des
 2. Download / clone the source
 3. Run `quicks.ahk`
 
-### Windows Executable
-1. [Download](https://github.com/dsymbol/quicks/releases) the windows executable
-2. Run `Quicks.exe` file
-
 ## Uninstall
-1. Delete `Quicks.exe` or `quicks.ahk`
+1. Delete `quicks.ahk`
 2. Delete `C:\Users\%USERPROFILE%\AppData\Roaming\Quicks`
