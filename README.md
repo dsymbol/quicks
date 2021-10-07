@@ -1,16 +1,14 @@
 # Quicks
-An account manager that makes switching between Overwatch accounts easier and less time consuming, automatically opens the game and logs in to your account.
+Account manager that launches `Overwatch.exe` directly making the login process fast and easy.
 
-Will not use the [Battle.net](https://www.blizzard.com/en-us/apps/battle.net/desktop) app, resulting in a much faster login procedure with less processes to start, which is especially handy for users with numerous Overwatch smurfs. 
+- Opens one Overwatch related process
+- Makes account switching **much** faster
+- Does not use the Battle.net launcher
 
 ## Demo
-<p align="center">
-  <img src="https://user-images.githubusercontent.com/88138099/127763796-0bab87de-1259-476f-aaff-60eb5debc47a.gif" alt="animated" />
-</p>
+https://user-images.githubusercontent.com/88138099/136336553-75571848-2a66-46a9-9115-7ce6a9465399.mp4
 
-## Installation
-
-### Source
+## Install
 1. Download and install [AutoHotKey](https://www.autohotkey.com/)
 2. Download / clone the source
 3. Run `quicks.ahk`
